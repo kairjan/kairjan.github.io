@@ -1,0 +1,134 @@
+body {
+	margin: 70px; /* это внешний отступ от границ объекта до окружающих элементов. */
+	/* background-color: #cccccc;  устанавливает цвет фона элемента. */
+	font-family: Arial, sans-serif;/**/
+	background: url(фон2.jpg) no-repeat center center fixed ;
+    background-size: cover;
+}
+body.fons {
+	margin: 70px; /* это внешний отступ от границ объекта до окружающих элементов. */
+	/* background-color: #cccccc;  устанавливает цвет фона элемента. */
+	font-family: Arial, sans-serif;/**/
+	background: url(фон1.jpg) no-repeat center center fixed ;
+    background-size: cover;
+}
+body h1 sup{
+	font-size: 15px;/*устанавливает размер шрифта текста.*/
+	font-weight: bold;/*Работоспособность данных значений зависит от шрифта, который используется размер*/
+	color: rgb(3, 0, 0);/*цвет*/
+}
+
+.button {
+	margin-top: 10px;/*устанавливает внешний отступ сверху элемента.*/
+	border-radius: 10px;/* скругляются границы блока.*/
+	border-color: #000000;/*задает цвет границы для всех сторон одновременно или отдельно для каждой стороны.*/
+	border-style: solid;/*задает стиль границы для всех сторон одновременно или отдельно для каждой стороны.*/
+	border-width: 1px;/*задает толщину границы для всех сторон одновременно или отдельно для каждой стороны.*/
+	width: 20%;/*ширина */
+	padding: 5px;/*ПОЛЕ отступа для ТЕКСТА(Только ТЕКСТА). margin - ОТСТУП*/
+	text-align: center;/*устанавливает выравнивание текста: по левому краю, по правому, по центру, по левому и правому краям одновременно.*/
+	font-weight: bold;/*Работоспособность данных значений зависит от шрифта, который используется размер*/
+    background-color:rgb(246, 37, 0);/*устанавливает цвет фона элемента*/
+}
+
+#For {
+	margin-top: 10px;/*устанавливает внешний отступ сверху элемента.*/
+	border-radius: 10px;/* скругляются границы блока.*/
+	border-color: #000000;/*задает цвет границы для всех сторон одновременно или отдельно для каждой стороны.*/
+	border-style: solid;/*задает стиль границы для всех сторон одновременно или отдельно для каждой стороны.*/
+	border-width: 1px;/*задает толщину границы для всех сторон одновременно или отдельно для каждой стороны.*/
+	width: 45%;/*ширина */
+	padding: 5px;/*ПОЛЕ отступа для ТЕКСТА(Только ТЕКСТА). margin - ОТСТУП*/
+	text-align: center;/*устанавливает выравнивание текста: по левому краю, по правому, по центру, по левому и правому краям одновременно.*/
+	font-weight: bold;/*Работоспособность данных значений зависит от шрифта, который используется размер*/
+    background-color:rgb(246, 37, 0);/*устанавливает цвет фона элемента*/	
+	cursor: pointer;
+}
+
+#Far {
+	margin-top: 10px;/*устанавливает внешний отступ сверху элемента.*/
+	border-radius: 10px;/* скругляются границы блока.*/
+	border-color: #000000;/*задает цвет границы для всех сторон одновременно или отдельно для каждой стороны.*/
+	border-style: solid;/*задает стиль границы для всех сторон одновременно или отдельно для каждой стороны.*/
+	border-width: 1px;/*задает толщину границы для всех сторон одновременно или отдельно для каждой стороны.*/
+	width: 45%;/*ширина */
+	padding: 5px;/*ПОЛЕ отступа для ТЕКСТА(Только ТЕКСТА). margin - ОТСТУП*/
+	text-align: center;/*устанавливает выравнивание текста: по левому краю, по правому, по центру, по левому и правому краям одновременно.*/
+	font-weight: bold;/*Работоспособность данных значений зависит от шрифта, который используется размер*/
+    background-color:rgb(11, 255, 2);/*устанавливает цвет фона элемента*/
+	cursor: pointer;
+}
+
+#historyArea {
+	margin-top: 10px;/*устанавливает внешний отступ сверху элемента.*/
+	padding-left: 5px;/*устанавливает расстояние (его также называют "внутренний отступ") между левым внутренним краем рамки элемента и его содержимым.*/
+	padding-right: 5px;/*устанавливает расстояние (его также называют "внутренний отступ") между правым внутренним краем рамки элемента и его содержимым.*/
+}
+
+#game {
+	background-color: #ffffff;/*устанавливает цвет фона элемента*/
+	border-radius: 10px;/*скругляются границы блока.*/
+	border-style: solid;/*задает стиль границы для всех сторон одновременно или отдельно для каждой стороны.*/
+	border-width: 5px;/**/
+	border-color: #929292;/**/
+	padding: 30px;/**/
+}
+
+
+#statusArea {
+	font-size: 120%;/**/
+}
+
+#footerArea {
+	text-align: center;/**/
+	margin-top:5px;/**/
+	font-size: 90%;/**/
+	font-style: italic;/**/
+}
+
+
+/*это кнопка бегун не путать!!!!!! */
+
+*,
+*:after,
+*:before {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+}
+ 
+#module-running-button {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-flow: row wrap;
+  place-content: center;
+}
+#module-running-button .cell {
+  text-align: center;
+  min-height: 50px;
+  line-height: 50px;
+  min-width: 33.3%;
+  border: 1px solid rgb(255, 255, 255);
+}
+#king {
+	width: 490px;
+	height: 250px;
+	margin-left: 235px;
+	margin-top: 140px;
+	background-color: #ffffff;/*устанавливает цвет фона элемента*/
+	border-radius: 0px;/*скругляются границы блока.*/
+	padding: 5px;/**/
+	
+}
+
+
+   
