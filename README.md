@@ -1,2 +1,1 @@
-# QarlygashBerzhankyzy.github.io
-Сайты
+
